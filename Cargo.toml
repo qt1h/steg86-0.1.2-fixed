@@ -1,0 +1,26 @@
+[package]
+name = "steg86"
+description = "A tool for hiding messages in x86(_64) binaries"
+license-file = "LICENSE"
+version = "0.1.2"
+authors = ["William Woodruff <william@yossarian.net>"]
+edition = "2018"
+readme = "README.md"
+homepage = "https://github.com/woodruffw/steg86"
+repository = "https://github.com/woodruffw/steg86"
+keywords = ["cli", "steganography", "steg", "x86"]
+categories = ["command-line-utilities", "encoding"]
+
+[package.metadata.release]
+no-dev-version = true
+disable-publish = true # handled by GitHub Actions
+
+[dependencies]
+anyhow = "1.0"
+bit-vec = "0.8.0"
+clap = "3.0"
+env_logger = "0.7"
+goblin = "0.2"
+iced-x86 = "1.21.0"
+lazy_static = "1.4.0"
+log = "0.4"
